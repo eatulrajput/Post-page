@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navigation bar starts */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  box-shadow: 2px 2px 24px 1px rgba(0, 0, 0, 0.2);
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  padding: 0px;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 4px 22px;
+  transition: 0.5s ease-in-out;
+  display: inline-block;
+}
+
+.nav-links a:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Navigation bar ends */
+
+/* .pc{
+    background-color: azure;
+  } */
+  
+  .posts{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .posts img{
+      width:28%;
+      margin: 1%;
+      cursor: pointer;
+      box-shadow: 0px 0px 40px 1px #777;
+      border-radius: 8px;
+   
+  }
+  
+  
+  /* width */
+  ::-webkit-scrollbar {
+      width: 7px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1; 
+    }
+     
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #777; 
+      border-radius: 28px;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555; 
+    }
+  
+    @media screen and (max-width: 700px) {
+      .posts img{
+        width: 100%;
+      }
+  }
+  
+
+  /* Mobile View  */
+@media screen and (max-width:768px) {
+    * {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Poppins', sans-serif;
+    }
+  
+    .home {
+        height: 600px;
+    }
+  
+    nav {
+        justify-content: center;
+        align-items: center;
+    }
+  
+    nav .logo {
+        display: none;
+    }
+  
+    .nav-links a {
+        color: black;
+        font-weight: bold;
+        font-size: 15px;
+        padding: 4px 22px;
+        transition: 0.5s ease-in-out;
+    }
+  
+    .nav-links a:hover {
+        background-color: black;
+        color: whitesmoke;
+    }
+  }
